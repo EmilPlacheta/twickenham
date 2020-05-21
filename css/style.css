@@ -3,7 +3,7 @@
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
  */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap');
 
 /* ////GENERAL STYLES */
 html {
@@ -23,6 +23,25 @@ h5 {
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #fff;
 }
+
+.highlite {
+  color: #dc3f0e;
+}
+
+blockquote {
+  border-left: 5px solid #dc3f0e;
+  letter-spacing: 0.0625em;
+}
+
+.beer-abv {
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+#beer-card {
+  margin-top: 1rem;
+}
+
 /* //page backgrounds */
 #index-bg {
   background-image: linear-gradient(
@@ -35,6 +54,16 @@ h5 {
   background-size: cover;
 }
 
+#home-delivery-bg {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(177, 24, 24, 0.205)
+    ),
+    url('/img/twickenham-cask.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
 #our-pub-bg {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -84,6 +113,7 @@ h5 {
 
 nav {
   height: 6rem;
+  box-shadow: none;
 }
 
 nav ul {
@@ -112,6 +142,13 @@ nav ul {
 }
 .sidenav li:hover {
   background-color: rgb(58, 58, 58);
+}
+
+#beers-nav h2 ul li {
+  display: inline;
+}
+.beers-nav-item {
+  color: gray;
 }
 
 /* //hero */
@@ -161,6 +198,14 @@ nav ul {
   }
 
   #map {
-    width: 80vw;
+    width: 75vw;
+  }
+
+  #beers-nav h2 ul li {
+    display: block;
+  }
+
+  #beer-card {
+    margin-top: 3rem;
   }
 }
